@@ -51,6 +51,12 @@ class ReactSignupLoginComponent extends React.Component {
     });
   }
 
+  bubleUpRecoverPassword() {
+    this.props.handleRecoverPassword({
+      username: this.state.username,
+    });
+  }
+
   render() {
     const styles = {
       wrapper: {
@@ -145,6 +151,8 @@ class ReactSignupLoginComponent extends React.Component {
     );
   }
 }
+
+
 
 ReactSignupLoginComponent.propTypes = {
   title: PropTypes.string,
